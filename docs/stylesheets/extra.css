@@ -1,9 +1,9 @@
 /* ===== Hero Banner ===== */
 .hero {
-  padding: 4rem 1rem 3.5rem;
+  padding: 4rem 1.5rem 3.5rem;
   margin: 0 0 3rem;
   text-align: center;
-  border-radius: 0.5rem;
+  border-radius: 14px;
 
   background: linear-gradient(
     135deg,
@@ -15,37 +15,46 @@
 [data-md-color-scheme="slate"] .hero {
   background: linear-gradient(
     135deg,
-    rgba(179, 136, 255, 0.12),
-    rgba(206, 147, 216, 0.10)
+    rgba(179, 136, 255, 0.14),
+    rgba(206, 147, 216, 0.12)
   );
 }
 
-.hero h1 {
-  font-size: 2.4rem;
-  margin-bottom: 0.6rem;
+/* ===== Grid Cards Base ===== */
+.md-typeset .grid.cards > ul {
+  gap: 1.2rem;
 }
 
-.hero p {
-  font-size: 1.05rem;
-  opacity: 0.85;
-}
-
-/* ===== Card Hover Effect ===== */
 .md-typeset .grid.cards > ul > li {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 14px;
+  padding: 1.2rem 1.4rem 1.3rem;
+  background: var(--md-default-bg-color);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
 
+/* ===== Card Title ===== */
+.md-typeset .grid.cards > ul > li h3 {
+  margin-top: 0;
+  font-size: 1.05rem;
+}
+
+/* ===== Hover Effect ===== */
 .md-typeset .grid.cards > ul > li:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-6px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.10);
 }
 
 /* ===== Highlight Official Contact Card ===== */
 .md-typeset .grid.cards > ul > li:last-child {
-  border: 1.5px solid rgba(156, 39, 176, 0.5);
+  border: 1.6px solid rgba(156, 39, 176, 0.45);
 }
 
 [data-md-color-scheme="slate"]
 .md-typeset .grid.cards > ul > li:last-child {
-  border-color: rgba(206, 147, 216, 0.6);
+  border-color: rgba(206, 147, 216, 0.55);
 }
