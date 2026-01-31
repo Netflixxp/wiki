@@ -58,3 +58,18 @@
 .md-typeset .grid.cards > ul > li:last-child {
   border-color: rgba(206, 147, 216, 0.55);
 }
+
+/* ===== Force grid cards alignment ===== */
+.md-typeset .grid.cards > ul {
+  grid-auto-rows: 1fr;
+}
+
+.md-typeset .grid.cards > ul > li {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Push link to bottom */
+.md-typeset .grid.cards > ul > li p:last-child {
+  margin-top: auto;
+}
