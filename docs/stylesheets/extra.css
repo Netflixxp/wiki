@@ -73,3 +73,25 @@
 .md-typeset .grid.cards > ul > li p:last-child {
   margin-top: auto;
 }
+
+/* ===== Force equal height cards ===== */
+.md-typeset .grid.cards > ul {
+  align-items: stretch !important;
+}
+
+/* Make each card a flex column */
+.md-typeset .grid.cards > ul > li {
+  display: flex;
+}
+
+/* Inner wrapper also flex */
+.md-typeset .grid.cards > ul > li > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Push last paragraph (👉 link) to bottom */
+.md-typeset .grid.cards > ul > li > div > :last-child {
+  margin-top: auto;
+}
