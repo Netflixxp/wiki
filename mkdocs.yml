@@ -1,20 +1,51 @@
 site_name: 神秘礼物 · Emby Wiki
+site_description: 私有 Emby 使用说明与规则文档
+site_author: 神秘礼物
 
 theme:
   name: material
   language: zh
+
+  icon:
+    logo: material/gift
+
+  palette:
+    # 浅色模式
+    - scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+
+    # 深色模式
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+
   features:
     - navigation.tabs
     - navigation.expand
     - navigation.top
+    - navigation.sections
+    - navigation.indexes
+    - toc.follow
     - search.highlight
+    - search.suggest
     - content.code.copy
 
 nav:
-  - 首页: index.md
+  - 首页:
+      - index.md
   - 使用指南:
       - 公费服说明: guide/paid.md
       - 公益服说明: guide/public.md
-  - 客户端与播放: client/player.md
-  - FAQ: faq.md
-  - 声明与说明: statement.md
+  - 客户端与播放:
+      - client/player.md
+  - FAQ:
+      - faq.md
+  - 声明与说明:
+      - statement.md
