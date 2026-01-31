@@ -121,3 +121,8 @@
   transform: translateY(-2px);
   box-shadow: 0 10px 26px rgba(0,0,0,.08);
 }
+
+/* 隐藏侧边栏顶部的站点标题，避免重复 */
+.md-nav__title {
+  display: none;
+}
