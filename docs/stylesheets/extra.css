@@ -71,3 +71,15 @@
 .md-typeset .card-btn.primary:hover {
   opacity: 0.9;
 }
+
+/* Two buttons in a card */
+.md-typeset .btn-row {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 0.8rem;
+}
+
+.md-typeset .btn-row .card-btn {
+  margin-top: 0; /* 覆盖单按钮的 margin-top，避免跳动 */
+}
