@@ -34,6 +34,11 @@ theme:
     - search.suggest
     - content.code.copy
 
+extra:
+  social:
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/smlw22
+
 nav:
   - 🏠 首页:
       - index.md
