@@ -35,16 +35,19 @@ theme:
     - content.code.copy
 
 nav:
-  - 首页:
+  - 🏠 首页:
       - index.md
-  - 使用指南:
-      - guide/paid.md
-      - guide/public.md
-  - 客户端与播放:
-      - client/player.md
-  - FAQ:
-      - faq.md
-  - 声明与说明:
-      - statement.md
-  - 官方联系:
-     - contact.md
+
+  - 📘 使用指南:
+      - 💳 公费服说明: guide/paid.md
+      - 🌱 公益服说明: guide/public.md
+
+  - ▶️ 客户端与播放:
+      - 🎬 客户端与播放说明: client/player.md
+
+  - ❓ FAQ:
+      - 常见问题: faq.md
+
+  - 📄 声明与说明:
+      - ⚠️ 使用声明: statement.md
+      - 📢 官方联系: contact.md
