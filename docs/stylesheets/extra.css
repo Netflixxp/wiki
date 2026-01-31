@@ -126,35 +126,3 @@
 .md-nav__title {
   display: none;
 }
-
-/* 左侧导航里的 emoji 统一降噪 */
-.md-nav__item svg.twemoji {
-  width: 1em;
-  height: 1em;
-  opacity: 0.75;
-  vertical-align: -0.15em;
-}
-
-/* 一级导航标题（分组） */
-.md-nav__item--section > .md-nav__link {
-  font-weight: 600;
-  font-size: 0.95rem;
-  letter-spacing: 0.2px;
-}
-
-/* 二级导航条目 */
-.md-nav__item:not(.md-nav__item--section) > .md-nav__link {
-  font-size: 0.88rem;
-  opacity: 0.95;
-}
-
-/* 当前页面高亮（克制版） */
-.md-nav__link--active {
-  color: #5e35b1;
-  font-weight: 600;
-}
-
-/* 二级导航缩进微调 */
-.md-nav__item .md-nav__item {
-  padding-left: 0.4rem;
-}
