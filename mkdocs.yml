@@ -1,0 +1,6 @@
+site_name: My Wiki
+theme:
+  name: material
+  language: zh
+nav:
+  - 首页: index.md
