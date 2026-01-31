@@ -1,6 +1,20 @@
-site_name: My Wiki
+site_name: 神秘礼物 · Emby Wiki
+
 theme:
   name: material
   language: zh
+  features:
+    - navigation.tabs
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+
 nav:
   - 首页: index.md
+  - 使用指南:
+      - 公费服说明: guide/paid.md
+      - 公益服说明: guide/public.md
+  - 客户端与播放: client/player.md
+  - FAQ: faq.md
+  - 声明与说明: statement.md

@@ -1,17 +1,46 @@
-# Welcome to MkDocs
+# 🎁 神秘礼物 · Emby Wiki
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+欢迎来到 **神秘礼物 Emby** 使用说明 Wiki。
 
-## Commands
+本 Wiki 用于说明服务器定位、加入方式、使用规则与常见问题，适合新用户快速了解，也便于老用户查阅相关说明。
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+---
 
-## Project layout
+## 📌 神秘礼物介绍
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+**神秘礼物 Emby** 为私有媒体服务器，内容以 **成人向资源** 为主：
+
+- 不提供任何正规影视资源  
+- 使用海外独立硬盘服务器部署  
+- 可支持百人规模同时在线播放  
+- 推荐使用海外网络环境访问（如香港、新加坡等亚洲节点）
+
+> 本项目仅供私下交流与使用，请自行确认所在地法律与网络环境。
+
+---
+
+## 🚪 如何加入
+
+神秘礼物当前分为两种使用方式：
+
+- **公益服**：  
+  根据服务器情况不定期开启名额，或通过活动获取注册码  
+  👉 [查看公益服说明](guide/public.md)
+
+- **公费服**：  
+  通过购买年卡 / 半年卡加入，无需保号  
+  👉 [查看公费服说明](guide/paid.md)
+
+请根据自身需求选择合适的方式。
+
+---
+
+## ⚠️ 使用前必读
+
+为保障账号与服务器稳定，请务必注意：
+
+- 使用非推荐播放器可能导致账号异常  
+- 不稳定或高风险线路可能影响正常播放  
+- 多人共用账号存在被限制的风险  
+
+👉 详细说明请查看【客户端与播放】相关页面。
