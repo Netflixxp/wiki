@@ -27,6 +27,7 @@ theme:
         name: 切换到浅色模式
 
   features:
+    - header.autohide: false
     - navigation.tabs
     - navigation.expand
     - navigation.top
