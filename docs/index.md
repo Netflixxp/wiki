@@ -1,53 +1,47 @@
-# 🎁 神秘礼物 · Emby Wiki
+<div class="home-root">
 
-::: card
-## 🎁 神秘礼物 Emby
+<!-- Banner（纯排版） -->
+<div class="home-banner">
+  <h1>🎁 神秘礼物 Emby</h1>
+  <p class="home-subtitle">稳定 · 克制 · 长期维护</p>
 
-使用说明与规则文档  
-稳定 · 克制 · 长期维护  
+  <div class="home-desc">
+    使用前请务必阅读相关说明
+  </div>
+</div>
 
-使用前请务必阅读相关说明，避免账号异常
-:::
+<h2 class="home-section-title">🚀 快速开始</h2>
 
----
+<div class="home-grid">
 
-## 🚀 快速开始
+  <div class="home-card">
+    <h3>📘 使用指南</h3>
+    <p>公费服 / 公益服的使用说明与规则</p>
+    <!-- 统一改为栏目入口 -->
+    <a href="guide/" class="home-link">进入 →</a>
+  </div>
 
-::: grid
-::: card
-### 📘 使用指南
+  <div class="home-card">
+    <h3>▶️ 客户端与播放</h3>
+    <p>推荐播放器、网络环境与注意事项</p>
+    <!-- 统一改为栏目入口 -->
+    <a href="client/" class="home-link">查看 →</a>
+  </div>
 
-公费服 / 公益服的使用说明与规则  
-适合首次使用或需要了解完整规则的用户  
+  <div class="home-card">
+    <h3>❓ 常见问题</h3>
+    <p>使用过程中可能遇到的问题说明</p>
+    <!-- 统一改为栏目入口 -->
+    <a href="faq/" class="home-link">查看 →</a>
+  </div>
 
-[💰 公费服](guide/paid.md){ .md-button .md-button--primary }
-[🆓 公益服](guide/public.md){ .md-button }
-:::
+  <div class="home-card home-card-outline">
+    <h3>📢 官方联系</h3>
+    <p>官方 Telegram 频道与客服入口</p>
+    <!-- 统一改为栏目入口 -->
+    <a href="contact/" class="home-link">进入 →</a>
+  </div>
 
-::: card
-### ▶️ 客户端与播放
+</div>
 
-推荐播放器、网络环境与注意事项  
-使用前务必查看，避免账号异常  
-
-[👉 查看客户端与播放](client/player.md){ .md-button }
-:::
-
-::: card
-### ❓ 常见问题
-
-使用过程中可能遇到的问题与解决说明  
-播放或账号异常请优先查看  
-
-[👉 查看 FAQ](faq.md){ .md-button }
-:::
-
-::: card
-### 📣 官方联系
-
-官方 Telegram 频道与客服支持入口  
-请认准官方渠道，谨防冒充  
-
-[👉 查看官方联系](contact.md){ .md-button .md-button--primary }
-:::
-:::
+</div>

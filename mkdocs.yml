@@ -58,22 +58,21 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-
-
 nav:
-  - 🏠 首页:
-      - index.md
+  - 🏠 首页: index.md
 
-  -  如何加入:
+  - 📘 使用指南:
+      - 使用总览: guide/index.md
       - 💳 公费服说明: guide/paid.md
       - 🌱 公益服说明: guide/public.md
 
-  - 播放说明:
-      - 🎬 客户端与播放说明: client/player.md
+  - ▶️ 客户端与播放:
+      - 🎬 客户端与播放说明: client/index.md
 
-  -  FAQ:
-      - ❓常见问题: faq.md
+  - ❓ FAQ:
+      - 常见问题: faq/index.md
 
-  -  其他:
+  - 其他:
+      - 其他信息: other/index.md
       - ⚠️ 使用声明: statement.md
-      - 📢 官方联系: contact.md
+      - 📢 官方联系: contact/index.md
