@@ -10,7 +10,6 @@ theme:
     logo: material/gift
 
   palette:
-    # 浅色模式
     - scheme: default
       primary: deep purple
       accent: purple
@@ -18,7 +17,6 @@ theme:
         icon: material/weather-night
         name: 切换到深色模式
 
-    # 深色模式
     - scheme: slate
       primary: deep purple
       accent: purple
@@ -27,11 +25,10 @@ theme:
         name: 切换到浅色模式
 
   features:
-    - navigation.tabs
     - navigation.expand
-    - navigation.top
     - navigation.sections
     - navigation.indexes
+    - navigation.top
     - toc.follow
     - search.highlight
     - search.suggest
@@ -41,8 +38,8 @@ nav:
   - 首页:
       - index.md
   - 使用指南:
-      - 公费服说明: guide/paid.md
-      - 公益服说明: guide/public.md
+      - guide/paid.md
+      - guide/public.md
   - 客户端与播放:
       - client/player.md
   - FAQ:
