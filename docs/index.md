@@ -4,10 +4,11 @@ title: 神秘礼物 · Emby Wiki
 
 <div class="hero">
 
-<h1>🎁 神秘礼物 Emby 私有媒体服务</h1>
+<h1>🎁 神秘礼物 Emby</h1>
 
 <p class="hero-sub">
-使用说明与规则文档 · 稳定 · 克制 · 长期维护  
+<br>
+ 稳定 · 克制 · 长期维护  
 <br>
 使用前请务必阅读相关说明，避免账号异常
 </p>
