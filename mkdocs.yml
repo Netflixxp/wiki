@@ -48,6 +48,7 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences:
+      preserve_tabs: true
       custom_fences:
         - name: grid
           class: grid
