@@ -24,7 +24,8 @@ title: 神秘礼物 · Emby Wiki
 - ### 📘 使用指南
   公费服 / 公益服的使用说明与规则  
   适合首次使用或需要了解完整规则的用户  
-  <div class="btn-row" markdown>
+
+  <div class="card-actions" markdown>
   [公费服说明](guide/paid.md){ .card-btn .primary }
   [公益服说明](guide/public.md){ .card-btn }
   </div>

@@ -83,3 +83,17 @@
 .md-typeset .btn-row .card-btn {
   margin-top: 0; /* 覆盖单按钮的 margin-top，避免跳动 */
 }
+
+/* Card action area */
+.md-typeset .card-actions {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+/* Ensure buttons stay inside cards */
+.md-typeset .card-actions .card-btn {
+  margin: 0;
+}
+
