@@ -28,19 +28,24 @@
     <a href="client/" class="home-link">查看 →</a>
   </div>
 
-  <div class="home-card">
-    <h3>❓ 常见问题</h3>
-    <p>使用过程中可能遇到的问题说明</p>
-    <!-- 统一改为栏目入口 -->
-    <a href="faq/" class="home-link">查看 →</a>
-  </div>
+ <div class="home-card">
+  <h3>❓ 常见问题</h3>
+  <p>使用过程中可能遇到的问题说明</p>
+  <a href="faq/" class="home-link">查看 →</a>
+</div>
 
-  <div class="home-card home-card-outline">
-    <h3>📢 官方联系</h3>
-    <p>官方 Telegram 频道与客服入口</p>
-    <!-- 统一改为栏目入口 -->
-    <a href="contact/" class="home-link">进入 →</a>
-  </div>
+<div class="home-card home-card-highlight">
+  <h3>🎰 专属抽奖中心</h3>
+  <p>🎁 付费必中 · 每张抽奖券必得奖品<br>
+  🤖 机器人自动开奖 · 公平透明</p>
+  <a href="lottery/" class="home-link home-link-primary">立即参与 →</a>
+</div>
+
+<div class="home-card home-card-outline">
+  <h3>📢 官方联系</h3>
+  <p>官方 Telegram 频道与客服入口</p>
+  <a href="contact/" class="home-link">进入 →</a>
+</div>
 
 </div>
 

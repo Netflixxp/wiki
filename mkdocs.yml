@@ -69,6 +69,9 @@ nav:
   - ▶️ 客户端与播放:
       - 🎬 客户端与播放说明: client/index.md
 
+- 🎯 专属抽奖中心:
+    - 🎰 活动说明: lottery/index.md
+
   - ❓ FAQ:
       - 常见问题: faq/index.md
 

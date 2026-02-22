@@ -11,7 +11,17 @@
 /* =====================================================
    Banner（纯排版，不是图片）
    ===================================================== */
+.home-card-highlight {
+  border: 1px solid #7c3aed;
+  background: linear-gradient(135deg, rgba(124,58,237,0.12), rgba(99,102,241,0.08));
+}
 
+.home-link-primary {
+  background: #7c3aed;
+  color: #fff !important;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
 .home-banner {
   background: #f6f3ff;
   border-radius: 16px;
