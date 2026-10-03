@@ -1,63 +1,33 @@
-<div class="home-root">
+---
+hide:
+  - toc
+---
 
-<!-- Banner（纯排版） -->
-<div class="home-banner">
-  <h1>🎁 神秘礼物</h1>
-  <p class="home-subtitle">私有媒体服务 · 使用说明与规则文档<br>公益服 · 公费服 · AI短剧服</p>
-
-  <div class="home-desc">
-    使用前请务必阅读相关说明
-  </div>
-</div>
-
-<h2 class="home-section-title">🚀 快速开始</h2>
-
-<div class="home-grid">
-
-  <div class="home-card">
-    <h3>📘 服务与加入方式</h3>
-    <p>公益服、公费服、AI短剧服采用独立账号体系，各服务账号不互通。</p>
-    <div class="card-actions">
-      <a href="guide/paid/" class="home-link home-link-primary">公费服 →</a>
-      <a href="guide/public/" class="home-link home-link-primary">公益服 →</a>
-      <a href="guide/ai-drama/" class="home-link home-link-primary">AI短剧服 →</a>
+<div class="cinema-home">
+  <section class="cinema-hero">
+    <div class="hero-art" aria-hidden="true"><div class="orbit"></div><div class="film-frame frame-one"><span>光影</span></div><div class="film-frame frame-two"><span>故事</span></div><div class="film-frame frame-three"><span>想象</span></div></div>
+    <div class="hero-copy">
+      <p class="eyebrow">THE MYSTERY GIFT · MEDIA GUIDE</p>
+      <h1>神秘礼物<span>让好故事，<br>在这里开始。</span></h1>
+      <p class="hero-summary">私有媒体服务 · 使用说明与规则文档<br>公益服 · 公费服 · AI短剧服</p>
+      <div class="card-actions"><a class="cinema-button primary" href="#services">选择你的服务 <span aria-hidden="true">↗</span></a><a class="cinema-button secondary" href="client/">播放指南 <span aria-hidden="true">▷</span></a></div>
+      <p class="hero-caption">使用前，请先阅读对应服务的说明与规则。</p>
     </div>
-  </div>
+  </section>
 
-  <div class="home-card">
-    <h3>▶️ 客户端与播放</h3>
-    <p>推荐播放器、网络环境与注意事项</p>
-    <!-- 统一改为栏目入口 -->
-    <a href="client/" class="home-link">查看 →</a>
-  </div>
+  <section id="services" class="cinema-section">
+    <div class="section-heading"><div><p class="eyebrow">EXPLORE THE SERVICES</p><h2>三种服务，各有精彩</h2></div><span class="section-note">独立账号 · 按需选择</span></div>
+    <div class="service-grid">
+      <a class="service-card paid" href="guide/paid/"><div class="service-art" aria-hidden="true"><span class="poster-word">CINEMA</span><span class="poster-number">01</span><i class="landscape"></i></div><div class="service-copy"><span class="service-label">长期使用</span><h3>公费服 <span aria-hidden="true">↗</span></h3><p>了解付费加入方式、服务说明与使用规则。</p><span class="service-link">查看加入说明 →</span></div></a>
+      <a class="service-card public" href="guide/public/"><div class="service-art" aria-hidden="true"><span class="poster-word">DISCOVER</span><span class="poster-number">02</span><i class="landscape"></i></div><div class="service-copy"><span class="service-label">活动加入</span><h3>公益服 <span aria-hidden="true">↗</span></h3><p>了解账号获取、签到保号与公益服规则。</p><span class="service-link">查看加入说明 →</span></div></a>
+      <a class="service-card drama" href="guide/ai-drama/"><div class="service-art" aria-hidden="true"><span class="poster-word">NEW STORIES</span><span class="poster-number">03</span><i class="landscape"></i></div><div class="service-copy"><span class="service-label">AI短剧 · 持续更新</span><h3>AI短剧服 <span aria-hidden="true">↗</span></h3><p>独立的短剧服务，探索不断更新的 AI 故事。</p><span class="service-link">查看服务说明 →</span></div></a>
+    </div>
+    <p class="account-note"><strong>账号提示</strong> 公益服、公费服、AI短剧服账号相互独立，不能通用。</p>
+  </section>
 
- <div class="home-card">
-  <h3>❓ 常见问题</h3>
-  <p>使用过程中可能遇到的问题说明</p>
-  <a href="faq/" class="home-link">查看 →</a>
-</div>
+  <section class="drama-feature"><div><p class="eyebrow">A NEW CHAPTER</p><h2>新故事，持续上演。</h2><p>AI短剧内容持续增加与更新。使用独立账号登录，服务调整以官方频道公告为准。</p><div class="card-actions"><a class="cinema-button primary" href="https://t.me/smlwai_bot">账号机器人 @smlwai_bot ↗</a><a class="cinema-button secondary" href="guide/ai-drama/">登录与使用 →</a></div></div><div class="drama-mark" aria-hidden="true">AI<span>SHORT STORIES</span></div></section>
 
-<div class="home-card home-card-highlight">
-  <h3>🎰 专属抽奖中心</h3>
-  <p>🎁 付费必中 · 每张抽奖券必得奖品<br>
-  🤖 机器人自动开奖 · 公平透明</p>
-  <a href="lottery/" class="home-link home-link-primary">立即参与 →</a>
-</div>
+  <section class="cinema-section"><div class="section-heading"><div><p class="eyebrow">BEFORE YOU PRESS PLAY</p><h2>观影前的准备</h2></div></div><div class="utility-grid"><a href="client/"><span class="utility-index">01 / PLAY</span><h3>客户端与播放 <span aria-hidden="true">↗</span></h3><p>播放器、网络环境与使用注意事项</p></a><a href="faq/"><span class="utility-index">02 / HELP</span><h3>常见问题 <span aria-hidden="true">↗</span></h3><p>账号与使用问题，先从这里寻找答案</p></a><a href="lottery/"><span class="utility-index">03 / EVENTS</span><h3>专属抽奖中心 <span aria-hidden="true">↗</span></h3><p>活动说明、抽奖规则与机器人入口</p></a></div></section>
 
-<div class="home-card home-card-outline">
-  <h3>📢 官方联系</h3>
-  <p>官方 Telegram 频道与客服入口</p>
-  <a href="contact/" class="home-link">进入 →</a>
-</div>
-
-</div>
-
-<h2 class="home-section-title">🎬 AI短剧服</h2>
-<p>AI短剧服主要提供持续更新的 AI 短剧内容，采用独立账号体系，账号与公益服、公费服不互通。</p>
-<p>🤖 AI短剧账号机器人：<a href="https://t.me/smlwai_bot">@smlwai_bot</a></p>
-<p><a href="guide/ai-drama/">查看 AI短剧服说明 →</a></p>
-<h2 class="home-section-title">📢 官方渠道</h2>
-<p>官方 Telegram 频道：<a href="https://t.me/smlw22">https://t.me/smlw22</a><br>
-客服机器人：<a href="https://t.me/EmbyKF_bot">@EmbyKF_bot</a></p>
-
+  <footer class="cinema-contact"><div><p class="eyebrow">STAY CONNECTED</p><h2>保持联系，不错过新消息。</h2></div><div class="contact-links"><a href="https://t.me/smlw22">官方频道 <span>@smlw22 ↗</span></a><a href="https://t.me/EmbyKF_bot">客服机器人 <span>@EmbyKF_bot ↗</span></a><a href="contact/">所有官方入口 <span>查看 →</span></a></div></footer>
 </div>

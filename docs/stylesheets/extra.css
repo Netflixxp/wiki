@@ -1,145 +1,82 @@
-/* =====================================================
-   首页整体根容器（Landing Page，而不是正文）
-   ===================================================== */
+/* Cinema landing page. Rules are scoped to preserve document pages. */
+.cinema-home { --cinema-bg:#10141d; --cinema-panel:#191f2b; --cinema-text:#f5f2ea; --cinema-muted:#b8bfcd; --cinema-gold:#edc987; color:var(--cinema-text); background:var(--cinema-bg); border-radius:18px; padding:28px; font-family:system-ui,"Microsoft YaHei",sans-serif; }
+.md-content:has(.cinema-home) { min-width:0; }
+.md-content__inner:has(.cinema-home) { margin-top:0; }
+.cinema-home * { box-sizing:border-box; }
+.cinema-home a { color:inherit; text-decoration:none; }
+.cinema-home a:focus-visible { outline:3px solid var(--cinema-gold); outline-offset:5px; }
+.cinema-home .eyebrow { font-size:10px; font-weight:700; letter-spacing:2px; color:var(--cinema-gold); margin:0 0 14px; }
+.cinema-hero { position:relative; overflow:hidden; min-height:420px; border-radius:12px; background:radial-gradient(ellipse at 85% 30%,#394454 0,transparent 55%),linear-gradient(120deg,#121823,#202a36); padding:48px 36px; }
+.hero-copy { position:relative; z-index:2; max-width:65%; }
+.cinema-home h1 { color:var(--cinema-text); font-size:18px; font-weight:500; margin:0; letter-spacing:2px; }
+.cinema-home h1 span { display:block; font-size:clamp(30px,3.8vw,52px); font-weight:750; line-height:1.28; letter-spacing:-1px; margin-top:22px; }
+.cinema-home .hero-summary { color:var(--cinema-muted); font-size:14px; line-height:1.9; margin:22px 0; }
+.card-actions { display:flex; flex-direction:row; flex-wrap:wrap; gap:10px; margin-top:1rem; }
+.cinema-home .cinema-button { display:inline-flex; align-items:center; justify-content:center; gap:16px; min-height:44px; padding:11px 17px; border-radius:5px; font-size:12px; font-weight:650; transition:background .2s,transform .2s; }
+.cinema-home .primary { background:var(--cinema-gold); color:#1a1920; }
+.cinema-home .secondary { border:1px solid #69717e; background:#18202c; }
+.cinema-home .cinema-button:hover { transform:translateY(-2px); background:#f8dbab; color:#171b23; }
+.cinema-home .hero-caption { font-size:11px; color:var(--cinema-muted); margin:20px 0 0; }
+.hero-art { position:absolute; inset:0 0 0 50%; pointer-events:none; }
+.orbit { width:380px; height:380px; border:1px solid #edc98730; border-radius:50%; position:absolute; top:35px; left:15%; box-shadow:0 0 0 35px #edc98706,0 0 0 70px #edc98704; }
+.film-frame { position:absolute; width:145px; height:240px; border:1px solid #c9d4de40; border-radius:4px; box-shadow:0 24px 55px #0008; overflow:hidden; background:linear-gradient(165deg,#a6b7c1,#394657 45%,#121824 46%); }
+.film-frame::before { content:""; position:absolute; width:160px; height:160px; border-radius:50%; background:#ecd3a8; top:35px; left:50px; opacity:.6; }
+.film-frame::after { content:""; position:absolute; inset:48% -40px -50px; background:#14202d; transform:rotate(-25deg); }
+.film-frame span { position:absolute; z-index:1; bottom:20px; left:20px; writing-mode:vertical-rl; font-size:22px; letter-spacing:7px; color:#fff; }
+.frame-one { top:90px; left:5%; transform:rotate(-14deg); }
+.frame-two { top:60px; left:35%; transform:rotate(8deg); background:linear-gradient(150deg,#6f7e80,#27393d 55%,#0c2128); }
+.frame-three { top:145px; left:65%; transform:rotate(22deg); background:linear-gradient(160deg,#967f8f,#463646 50%,#201e2e); }
+.cinema-section { margin-top:36px; scroll-margin-top:80px; }
+.section-heading { display:flex; justify-content:space-between; gap:16px; align-items:end; margin-bottom:20px; }
+.cinema-home h2 { color:var(--cinema-text); font-size:22px; font-weight:700; margin:0; letter-spacing:-.5px; }
+.section-heading .eyebrow { margin-bottom:8px; }
+.section-note { color:var(--cinema-muted); font-size:11px; }
+.service-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+.service-card { overflow:hidden; border-radius:8px; background:var(--cinema-panel); border:1px solid #ffffff15; transition:transform .2s,border-color .2s; }
+.service-card:hover { transform:translateY(-4px); border-color:var(--cinema-gold); }
+.service-art { position:relative; overflow:hidden; height:185px; background:radial-gradient(circle at 68% 28%,#dfbe83 0, #dfbe83 13%,transparent 13.5%),linear-gradient(155deg,#4f6674,#1d3447 60%,#142130); }
+.public .service-art { background:radial-gradient(circle at 30% 35%,#addac6 0,#addac6 12%,transparent 12.5%),linear-gradient(145deg,#4b7c76,#173d43 65%,#182630); }
+.drama .service-art { background:radial-gradient(ellipse at 65% 35%,#d6aebf,transparent 45%),linear-gradient(145deg,#644f77,#312642 65%,#1d2436); }
+.poster-word { position:absolute; z-index:2; left:16px; top:17px; letter-spacing:3px; font-size:9px; color:#ffffffc9; }
+.poster-number { position:absolute; top:45px; right:15px; font-size:75px; font-weight:800; line-height:1; color:#ffffff20; }
+.landscape { position:absolute; width:140%; height:75%; background:linear-gradient(150deg,#142330,#080f1b); left:-20%; bottom:-35%; transform:rotate(-24deg); box-shadow:20px -24px 0 #213b4880; }
+.public .landscape { transform:rotate(25deg); background:#102e32; box-shadow:20px -30px 0 #224d5280; }
+.drama .landscape { transform:rotate(-40deg); background:#241a33; box-shadow:20px -30px 0 #58456780; }
+.service-copy { padding:20px 17px; }
+.service-label { font-size:10px; color:var(--cinema-gold); }
+.cinema-home h3 { color:var(--cinema-text); font-size:18px; font-weight:650; margin:10px 0; }
+.cinema-home h3 span { float:right; color:var(--cinema-muted); font-weight:400; }
+.service-copy p { color:var(--cinema-muted); font-size:12px; line-height:1.8; min-height:44px; margin:0 0 20px; }
+.service-link { font-size:11px; color:var(--cinema-text); }
+.cinema-home .account-note { padding:14px 16px; margin:14px 0 0; background:#ffffff04; border:1px solid #ffffff12; border-radius:6px; font-size:11px; color:var(--cinema-muted); line-height:1.8; }
+.account-note strong { color:var(--cinema-gold); margin-right:12px; }
+.drama-feature { display:flex; justify-content:space-between; gap:22px; margin-top:36px; padding:28px; border:1px solid #8b789653; border-radius:9px; background:radial-gradient(ellipse at right,#493647 0,transparent 65%),#1e202c; }
+.drama-feature>div:first-child { max-width:75%; }
+.drama-feature p:not(.eyebrow) { color:var(--cinema-muted); font-size:12px; line-height:1.9; }
+.drama-mark { display:flex; flex-direction:column; justify-content:center; font-size:70px; font-weight:800; letter-spacing:-5px; color:#d1b5c8; }
+.drama-mark span { font-size:8px; letter-spacing:2px; }
+.utility-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+.utility-grid>a { padding:20px 16px; border:1px solid #ffffff20; border-radius:7px; transition:background .2s; }
+.utility-grid>a:hover { background:var(--cinema-panel); }
+.utility-index { color:var(--cinema-gold); font-size:9px; letter-spacing:1.5px; }
+.utility-grid h3 { font-size:14px; }
+.utility-grid p { font-size:11px; line-height:1.8; color:var(--cinema-muted); margin:0; }
+.cinema-contact { margin-top:36px; padding:28px 0 4px; border-top:1px solid #ffffff20; }
+.cinema-contact h2 { font-size:18px; }
+.contact-links { display:flex; flex-wrap:wrap; gap:12px 24px; margin-top:18px; }
+.contact-links a { display:flex; flex-wrap:wrap; gap:10px; font-size:11px; min-height:44px; align-items:center; }
+.contact-links span { color:var(--cinema-gold); }
+@media(min-width:1220px) { .md-grid:has(.cinema-home) { max-width:1440px; } }
+@media(max-width:760px) { .cinema-home { padding:18px; border-radius:12px; } .cinema-hero { padding:32px 22px; min-height:410px; } .hero-copy { max-width:90%; } .hero-art { opacity:.25; inset:0 0 0 35%; } .hero-copy h1 span { font-size:36px; } .section-heading { align-items:start; flex-direction:column; gap:10px; } .service-grid,.utility-grid { grid-template-columns:1fr; } .service-card { display:grid; grid-template-columns:35% 65%; } .service-art { height:100%; min-height:180px; } .poster-number { font-size:55px; } .poster-word { font-size:8px; letter-spacing:1px; left:12px; } .service-copy p { min-height:0; } .drama-feature { padding:22px; } .drama-feature>div:first-child { max-width:100%; } .drama-mark { display:none; } .cinema-home h2 { font-size:21px; } .cinema-home .hero-summary { font-size:14px; } }
+@media(prefers-reduced-motion:reduce) { .cinema-home a { transition:none; } .cinema-home a:hover { transform:none; } }
 
-.home-root {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-
-/* =====================================================
-   Banner（纯排版，不是图片）
-   ===================================================== */
-.home-card-highlight {
-  border: 1px solid #7c3aed;
-  background: linear-gradient(135deg, rgba(124,58,237,0.12), rgba(99,102,241,0.08));
-}
-
-.home-link-primary {
-  background: #7c3aed;
-  color: #fff !important;
-  padding: 6px 12px;
-  border-radius: 8px;
-}
-.home-banner {
-  background: #f6f3ff;
-  border-radius: 16px;
-  padding: 2.6rem 2.4rem;
-  margin: 0 auto 3rem;
-  text-align: center;   /* 👈 关键 */
-}
-
-
-.home-banner h1 {
-  margin: 0;
-  font-size: 2.1rem;
-  font-weight: 600;
-}
-
-.home-subtitle {
-  margin-top: 0.6rem;
-  font-size: 1rem;
-  color: #666;
-}
-
-.home-desc {
-  margin-top: 1.4rem;
-  line-height: 1.6;
-  color: #555;
-}
-
-
-/* =====================================================
-   2 × 2 卡片布局
-   ===================================================== */
-
-.home-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.6rem;
-}
-
-@media (max-width: 760px) {
-  .home-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-/* =====================================================
-   卡片本体
-   ===================================================== */
-
-.home-card {
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 1.6rem 1.6rem 1.7rem;
-  box-shadow: 0 6px 22px rgba(0,0,0,.06);
-  display: flex;
-  flex-direction: column;
-}
-
-.home-card h3 {
-  margin: 0 0 0.6rem 0;
-  font-size: 1.05rem;
-}
-
-.home-card p {
-  color: #555;
-  line-height: 1.55;
-  margin: 0 0 1.2rem 0;
-  flex: 1;
-}
-
-
-/* =====================================================
-   官方联系卡片（弱强调，不抢）
-   ===================================================== */
-
-.home-card-outline {
-  border: 1.5px dashed rgba(124,77,255,.5);
-  background: #faf8ff;
-}
-
-
-/* =====================================================
-   入口链接（不是按钮，像 Wiki）
-   ===================================================== */
-
-.home-link {
-  color: #7c4dff;
-  font-weight: 500;
-  text-decoration: none;
-  align-self: flex-start;
-}
-
-.home-link:hover {
-  text-decoration: underline;
-}
-
-
-/* =====================================================
-   可选：极轻微 hover（克制）
-   ===================================================== */
-
-.home-card {
-  transition: transform .15s ease, box-shadow .15s ease;
-}
-
-.home-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 26px rgba(0,0,0,.08);
-}
-
-/* 隐藏侧边栏顶部的站点标题，避免重复 */
-.md-nav__title {
-  display: none;
-}
-.card-actions {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 1rem;
-}
+/* Match the Material shell to the cinema homepage only. */
+body:has(.cinema-home) { background:#10141d; }
+body:has(.cinema-home) .md-header { background:#10141d; border-bottom:1px solid #ffffff18; box-shadow:none; }
+body:has(.cinema-home) .md-main { color:#b8bfcd; }
+body:has(.cinema-home) .md-nav { color:#b8bfcd; }
+body:has(.cinema-home) .md-nav__link--active { color:#edc987; }
+body:has(.cinema-home) .md-nav__link:hover { color:#edc987; }
+body:has(.cinema-home) .md-nav__title { background:#10141d; color:#f5f2ea; box-shadow:none; }
+body:has(.cinema-home) .md-footer { background:#0c1018; }
+@media(max-width:1219px) { body:has(.cinema-home) .md-sidebar--primary { background:#10141d; } }
