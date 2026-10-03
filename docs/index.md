@@ -25,7 +25,7 @@ hide:
     <p class="account-note"><strong>账号提示</strong> 公益服、公费服、AI短剧服账号相互独立，不能通用。</p>
   </section>
 
-  <section class="drama-feature"><div><p class="eyebrow">A NEW CHAPTER</p><h2>新故事，持续上演。</h2><p>AI短剧内容持续增加与更新。使用独立账号登录，服务调整以官方频道公告为准。</p><div class="card-actions"><a class="cinema-button primary" href="https://t.me/smlwai_bot">账号机器人 @smlwai_bot ↗</a><a class="cinema-button secondary" href="guide/ai-drama/">登录与使用 →</a></div></div><div class="drama-mark" aria-hidden="true">AI<span>SHORT STORIES</span></div></section>
+  <section class="drama-feature"><div><p class="eyebrow">A NEW CHAPTER</p><h2>AI短剧服，新启幕。精彩继续。</h2><p>神秘礼物新增 AI短剧服，为你带来更多精彩。短剧内容持续更新，使用独立账号登录；最新动态以官方频道公告为准。</p><div class="card-actions"><a class="cinema-button primary" href="https://t.me/smlwai_bot">账号机器人 @smlwai_bot ↗</a><a class="cinema-button secondary" href="guide/ai-drama/">登录与使用 →</a></div></div><div class="drama-mark" aria-hidden="true">AI<span>SHORT STORIES</span></div></section>
 
   <section class="cinema-section"><div class="section-heading"><div><p class="eyebrow">BEFORE YOU PRESS PLAY</p><h2>观影前的准备</h2></div></div><div class="utility-grid"><a href="client/"><span class="utility-index">01 / PLAY</span><h3>客户端与播放 <span aria-hidden="true">↗</span></h3><p>播放器、网络环境与使用注意事项</p></a><a href="faq/"><span class="utility-index">02 / HELP</span><h3>常见问题 <span aria-hidden="true">↗</span></h3><p>账号与使用问题，先从这里寻找答案</p></a><a href="lottery/"><span class="utility-index">03 / EVENTS</span><h3>专属抽奖中心 <span aria-hidden="true">↗</span></h3><p>活动说明、抽奖规则与机器人入口</p></a></div></section>
 
