@@ -1,5 +1,5 @@
-site_name: 神秘礼物 · Emby Wiki
-site_description: 私有 Emby 使用说明与规则文档
+site_name: 神秘礼物 · Wiki
+site_description: 神秘礼物使用说明与规则文档
 site_author: 神秘礼物
 
 theme:
@@ -47,22 +47,17 @@ markdown_extensions:
   - md_in_html
   - admonition
   - pymdownx.details
-  - pymdownx.superfences:
-      preserve_tabs: true
-      custom_fences:
-        - name: grid
-          class: grid
-        - name: card
-          class: card
+  - pymdownx.superfences
   - pymdownx.emoji
 
 nav:
   - 🏠 首页: index.md
 
-  - 📘 使用指南:
+  - 🚪 如何加入:
       - 使用总览: guide/index.md
       - 💳 公费服说明: guide/paid.md
       - 🌱 公益服说明: guide/public.md
+      - 🎬 AI短剧服说明: guide/ai-drama.md
 
   - ▶️ 客户端与播放:
       - 🎬 客户端与播放说明: client/index.md

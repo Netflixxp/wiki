@@ -136,3 +136,10 @@
 .md-nav__title {
   display: none;
 }
+.card-actions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1rem;
+}
